@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin-left: 30px;
+    margin-top: 30px;
+}
+
+.box::before {
+    content: "";
+    background: linear-gradient(
+        135deg,
+        purple,
+        red
+    );
+    width: 86px;
+    height: 86px;
+    border-radius: 50%;
+    z-index: -1;
+    position: absolute;
+    left: -5px;
+    bottom: -4px;
+}
+
+.box {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(116, 109, 116);
+    border-radius: 50%;
+    position: relative;
+    border: 1.50px solid #FFF;
+}
+
+.box::after {
+    content: "";
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: red;
+    border: 1.50px solid white;
+    position: absolute;
+    z-index: 1;
+    top: 65px;
+    left: 25px;
+}
